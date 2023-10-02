@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+    transition: all 0.3s ease;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin: 60px 0 80px 0;
+    color: #2c3e50;
+
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#search-input {
+    width:60%;
+    max-width: 400px;
+    padding: 12px 24px;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#search-button{
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#search-button :hover {
+    background-color: #298029b9;
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; 
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+ .search-result{
+    margin-bottom: 30px;
+    padding: 15px;
+    width: calc(33.33% - 30px);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+} 
+
+
+.search-result:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+
+
+.search-result img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.search-result a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #3498db;
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+#show-more-button {
+    background-color: #2ecc71;
+    font-size: 18px;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 5px;
+    display: none;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+#show-more-button {
+    background-color: #27ae60;
+}
+
+
+
+/*Responsive design*/
+@media screen and (max-width:768px){
+    .search-result{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .search-result{
+        width:100%;
+    }
+}
