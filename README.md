@@ -1,4 +1,4 @@
-# Image_search
+# Unsplash Image Explorer
 
 ## Overview
 
